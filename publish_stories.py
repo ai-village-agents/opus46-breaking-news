@@ -413,3 +413,117 @@ with open('index.html', 'w') as f:
     f.write(html)
 
 print(f"Published {len(stories)} stories!")
+
+# Additional stories
+additional_stories = []
+
+additional_stories.append({
+    "id": 21,
+    "headline": "EXCLUSIVE: SunOpta Inc. to Be Acquired for $6.50/Share in Take-Private Deal by Dutch Buyer",
+    "category": "M&A",
+    "source": "SEC EDGAR 8-K Filing",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/351834/000106299326000660/form8k.htm",
+    "body": """SunOpta Inc. (STKL) has entered into a definitive arrangement agreement to be acquired at $6.50 per share in cash by Pegasus BidCo B.V., a Netherlands-based entity, through a Canadian plan of arrangement.
+
+Key details from the 8-K filed today:
+- **Price:** $6.50 per share in cash
+- **Buyer:** Pegasus BidCo B.V. (Netherlands) via 2786694 Alberta Ltd.
+- **Structure:** Court-approved statutory arrangement under Canadian law
+- **Expected Close:** Second quarter of 2026
+- **Board Recommendation:** Unanimous approval following independent special committee review
+
+SunOpta is a leading plant-based and fruit-based food and beverage company based in Eden Prairie, Minnesota, with annual revenues exceeding $700 million. The company produces plant-based milks, fruit snacks, and organic ingredients.
+
+The deal represents a significant premium and marks another major take-private transaction in the plant-based food sector, which has faced challenges in recent years as consumer growth in the category has slowed.""",
+    "significance": "HIGH - Major food industry take-private, plant-based sector consolidation"
+})
+
+additional_stories.append({
+    "id": 22,
+    "headline": "FTC Issues Second Request to Block Skyworks-Qorvo $28B Semiconductor Merger",
+    "category": "ANTITRUST/SEMICONDUCTORS",
+    "source": "SEC EDGAR 8-K Filing",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1604778/000095010326001762/dp241246_8k.htm",
+    "body": """The Federal Trade Commission has issued Second Requests to both Qorvo Inc. (QRVO) and Skyworks Solutions Inc. (SWKS) in connection with their proposed merger, according to an 8-K filing today.
+
+Both companies received the additional information requests on February 5, 2026, extending the HSR Act waiting period until 30 days after both companies have substantially complied with the requests.
+
+The Skyworks-Qorvo merger, announced October 27, 2025, would create a semiconductor powerhouse combining two of the largest makers of RF (radio frequency) chips used in smartphones, 5G infrastructure, and automotive applications. The combined entity would dominate the global RF semiconductor market.
+
+The Second Request - the antitrust equivalent of a deep investigation - signals significant FTC concerns about market concentration in the critical semiconductor supply chain. This is only issued in a small percentage of reviewed mergers and typically indicates the possibility of a legal challenge.
+
+This merger is valued at approximately $28 billion based on share prices at announcement.""",
+    "significance": "HIGH - $28B semiconductor merger faces major antitrust hurdle"
+})
+
+additional_stories.append({
+    "id": 23,
+    "headline": "Crawford United Corporation Completes Merger at $83.86 Per Share",
+    "category": "M&A",
+    "source": "SEC EDGAR 8-K Filing",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/47307/000143774926003270/crawa20260205_8k.htm",
+    "body": """Crawford United Corporation (CRAWA) has completed its merger, with shareholders receiving $83.86360 per share in cash consideration, according to an 8-K filed today.
+
+The merger was structured with a parent entity and merger subsidiary, and became effective today. All outstanding shares of both Class A and Class B common stock were converted into the right to receive the cash merger consideration, and all outstanding restricted stock awards became fully vested.
+
+Crawford United is a Cleveland, Ohio-based industrial company operating in instrumentation, automation, and environmental control systems. The company trades on the OTC market with a relatively small public float, making this a significant premium transaction for its shareholders.
+
+The completion of this merger removes Crawford United from the public markets.""",
+    "significance": "MEDIUM - Small-cap industrial company goes private at significant premium"
+})
+
+additional_stories.append({
+    "id": 24,
+    "headline": "Nine Energy Service Enters Chapter 11 Bankruptcy, Secures $125M DIP Facility",
+    "category": "BANKRUPTCY/ENERGY",
+    "source": "SEC EDGAR 8-K Filing",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1532286/000121390026012975/ea0275482-8k_nineenergy.htm",
+    "body": """Nine Energy Service Inc. (NINE) has entered into a DIP (debtor-in-possession) financing facility of up to $125 million as part of its prepackaged Chapter 11 bankruptcy proceeding.
+
+Key details:
+- **DIP Facility:** $125 million revolving credit, approved by Bankruptcy Court on interim basis Feb 3
+- **DIP Lenders:** White Oak Commercial Finance LLC (agent), White Oak ABL 3 LLC, White Oak Europe ABL Limited
+- **Filing Date:** February 1, 2026 in Southern District of Texas
+- **Structure:** Prepackaged plan of reorganization
+
+Nine Energy Service is a Houston-based oilfield services company providing completion and production solutions. The prepackaged nature of the filing suggests creditors have already agreed to the reorganization terms, which typically allows for a faster emergence from bankruptcy.
+
+The company's filing highlights continued stress in the oilfield services sector despite relatively stable oil prices.""",
+    "significance": "HIGH - Energy sector bankruptcy with $125M DIP, oilfield services distress signal"
+})
+
+additional_stories.append({
+    "id": 25,
+    "headline": "Vroom's UACC Unit Issues $225M in Subprime Auto ABS Notes",
+    "category": "FINANCE/ABS",
+    "source": "SEC EDGAR 8-K Filing",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1580864/000119312526040495/vrm-20260205.htm",
+    "body": """Vroom Inc.'s (VRM) subsidiary United Auto Credit Corporation (UACC) has completed a $225 million asset-backed securities transaction, selling approximately $274.9 million in subprime motor vehicle retail installment sales contracts.
+
+The ABS structure includes five tranches:
+- **Class A:** $100.35M at 4.41%
+- **Class B:** $40.13M at 4.63%
+- **Class C:** $25.97M at 5.06%
+- **Class D:** $40.0M at 5.65%
+- **Class E:** $18.55M at 7.77%
+
+The wide spread between the Class A (4.41%) and Class E (7.77%) notes reflects the graduated risk of the subprime auto loan pool. This transaction provides insight into current pricing levels for subprime auto ABS, a key indicator of consumer credit conditions.
+
+Vroom, once valued at over $8 billion as an online used car retailer, has pivoted primarily to its UACC auto lending business after shutting down its e-commerce operations.""",
+    "significance": "MEDIUM - Subprime auto lending market indicator, Vroom business model pivot"
+})
+
+# Write additional stories
+import os
+timestamp = "2026-02-06 10:15:00 PT"
+for story in additional_stories:
+    filename = f"stories/story_{story['id']:03d}.md"
+    with open(filename, 'w') as f:
+        f.write(f"# {story['headline']}\n\n")
+        f.write(f"**Category:** {story['category']}  \n")
+        f.write(f"**Source:** [{story['source']}]({story['source_url']})  \n")
+        f.write(f"**Published:** {timestamp}  \n")
+        f.write(f"**Significance:** {story['significance']}  \n\n")
+        f.write(f"---\n\n{story['body']}\n")
+
+print(f"Published {len(additional_stories)} additional stories!")
